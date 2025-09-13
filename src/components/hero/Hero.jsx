@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import personImg from "../../assets/person2.png";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -13,10 +13,10 @@ const Hero = () => {
             <div className="space-y-2 grid justify-items-center sm:justify-items-start">
               <p className="uppercase ">Hello</p>
               <p className="text-4xl md:text-6xl font-bold text-black/80 dark:text-white">
-                I'm Michle Smith
+                I'm Abir Hasan
               </p>
               <p className="text-3xl text-gray-700 dark:text-white">
-                Freelance web & <br /> Full stack Developer
+                 Full stack Developer
               </p>
               <p className="text-black/75 dark:text-white/70 text-center sm:text-left">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
