@@ -119,7 +119,7 @@ const Projects = () => {
                     <span
                       key={index}
                       className="px-3 py-1  text-white text-xs font-medium 
-                     rounded-full shadow-md hover:shadow-lg transition-shadow duration-200 primary-btn"
+                     rounded-full shadow-md hover:shadow-lg transition-shadow duration-200 bg-orange-400 hover:bg-orange-300"
                     >
                       {tech}
                     </span>

@@ -16,7 +16,7 @@ const Projects = lazy(
   () =>
     new Promise((resolve) => {
       setTimeout(
-        () => resolve(import("./components/projects/Projects.jsx")),
+        () => resolve(import("./components/Projects/Projects.jsx")),
         1500
       ); // 1.5s delay
     })
