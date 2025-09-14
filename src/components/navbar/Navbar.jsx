@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";  // <-- add this
 
 const navMenus = [
   { name: "Home", link: "/" },           // route use korlam
-  { name: "About", link: "/#about" },    // scroll section (same page)
-  { name: "Services", link: "/#services" },
+  { name: "Resume", link: "/resume" },    // scroll section (same page)
   { name: "Projects", link: "/projects" }, // new page
+  { name: "Services", link: "/#services" },
   { name: "Contact", link: "/contact"}
 ];
 

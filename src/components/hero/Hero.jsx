@@ -90,14 +90,14 @@ const Hero = () => {
               />
             </div>
             {/* main div for working details */}
-            <div className="grid grid-cols-3 gap-4 w-full h-20 sm:w-3/4 mt-4">
+            <div className="grid grid-cols-3 gap-4 w-full h-20 sm:w-3/4 sm: mt-4">
               {/* experience div */}
               <div
                 className="bg-primary text-white
                 rounded-xl shadow-lg hover:shadow-primary/60 p-4 flex flex-col items-center justify-center
                 transition-all duration-300 transform  hover:bg-primary/80 "
                 >
-                <p className="text-center font-bold text-xl">2+</p>
+                <p className=" text-xl">2+</p>
                 <p className="text-center text-sm">Years Experience</p>
               </div>
               {/* completed project div */}

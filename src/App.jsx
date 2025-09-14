@@ -28,6 +28,17 @@ const Contact = lazy(() =>
   )
 );
 
+// Lazy import Resume
+const Resume = lazy(
+  () =>
+    new Promise((resolve) => {
+      setTimeout(
+        () => resolve(import("./components/resume/Resume.jsx")),
+        1500
+      ); // 1.5s delay
+    })
+);
+
 const App = () => {
   React.useEffect(() => {
     AOS.init({
@@ -52,9 +63,7 @@ const App = () => {
               <Hero />
               <About />
               <Skills />
-
               <Services />
-
               <Footer />
             </>
           }
@@ -75,6 +84,15 @@ const App = () => {
           element={
             <Suspense fallback={<Loader />}>
               <Contact />
+            </Suspense>
+          }
+        />
+        {/* Resume Page with Loader */}
+        <Route
+          path="/resume"
+          element={
+            <Suspense fallback={<Loader />}>
+              <Resume />
             </Suspense>
           }
         />

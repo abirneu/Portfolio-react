@@ -58,7 +58,7 @@ const Projects = () => {
     <section className="min-h-screen bg-secondary dark:bg-gray-900 ">
       <div className="container mx-auto px-4 py-12">
         <div className=" font-bold relative">
-          <div className=" text-center text-6xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
+          <div className=" text-center text-5xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
             PROJECTS
           </div>
           <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl dark:text-white">
