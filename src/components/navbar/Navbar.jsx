@@ -46,7 +46,7 @@ const Navbar = () => {
                   // Normal anchor for same page scroll
                   <a
                     href={navMenu.link}
-                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
+                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer "
                   >
                     {navMenu.name}
                   </a>
@@ -54,7 +54,7 @@ const Navbar = () => {
                   // Router Link for new page
                   <Link
                     to={navMenu.link}
-                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
+                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer "
                   >
                     {navMenu.name}
                   </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
             {/* Light/Dark Toggle */}
             {theme === "dark" ? (
               <BiSolidSun
-                className="text-2xl dark:text-white"
+                className="text-2xl dark:text-white cursor-pointer"
                 onClick={() => setTheme("light")}
               />
             ) : (
