@@ -10,7 +10,8 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const roles = ['Full Stack Developer', 'Student', 'Programmer'];
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const roles = ['Full Stack Developer', 'Programmer', 'CS Student', 'Photographer'];
 
   useEffect(() => {
     const handleType = () => {
@@ -45,7 +46,7 @@ const Hero = () => {
             <p className="text-4xl md:text-6xl font-bold text-black/80 dark:text-white">
               I'm Abir Hasan
             </p>
-            <p className="text-3xl text-gray-700 dark:text-white min-h-[2.5rem]">
+            <p className="text-3xl text-stone-500 dark:text-white min-h-[2.5rem]">
               {text}
               <span className="animate-pulse">|</span>
             </p>

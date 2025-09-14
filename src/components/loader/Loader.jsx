@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Loader = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger the animation after a tiny delay
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 50);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="flex h-screen items-center justify-center">
-      <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-500"></div>
+    <div className="relative h-screen w-full overflow-hidden">
+      
+      {/* Orange screen that covers everything */}
+      <div className={`absolute inset-0 bg-stone-500 transition-transform duration-1000 ease-in-out dark:bg-gray-700 ${
+        isVisible ? 'translate-x-0' : '-translate-x-full'
+      }`}></div>
     </div>
   );
 };
