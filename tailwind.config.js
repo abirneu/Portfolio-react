@@ -8,6 +8,15 @@ export default {
         primary: "#f98e2b",
         secondary: "#f3f3f3",
       },
+      animation: {
+        'shine': 'shine 2s infinite',
+      },
+      keyframes: {
+        shine: {
+          'from': { transform: 'translateX(-100%)' },
+          'to': { transform: 'translateX(200%)' },
+        },
+      },
     },
     container: {
       center: true,

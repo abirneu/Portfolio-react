@@ -10,6 +10,28 @@
     @apply ring-2 ring-primary inset-0 text-primary cursor-pointer hover:bg-primary hover:text-white px-4 py-2 rounded-lg my-3;
   }
 }
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgb(226 232 240 / 0.1) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgb(226 232 240 / 0.1) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+  }
+
+  @keyframes shine {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(200%);
+    }
+  }
+
+  .animate-shine {
+    animation: shine 2s infinite;
+  }
+}
+
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -38,3 +60,4 @@
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
