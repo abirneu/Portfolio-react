@@ -3,17 +3,17 @@ import React, { useState, useMemo, useEffect } from 'react';
 // Import images directly - you'll need to add these imports manually
 // Replace these with your actual image imports from the photography folder
 import Image1 from '../../photography_image/img1.jpg'
-import Image2 from '../../photography_image/img2.jpg'
-import Image3 from '../../photography_image/img2.jpg'
+import Image2 from '../../photography_image/IMG-20250915-WA0006.jpg'
+import Image3 from '../../photography_image/IMG-20250915-WA0009.jpg'
 import Image4 from '../../photography_image/img2.jpg'
-import Image5 from '../../photography_image/img2.jpg'
-import Image6 from '../../photography_image/img2.jpg'
+import Image5 from '../../photography_image/IMG-20250915-WA0007.jpg'
+import Image6 from '../../photography_image/IMG-20250915-WA0005.jpg'
 
 
 // Placeholder data structure - UPDATE THIS WITH YOUR ACTUAL IMAGES AND METADATA
 const placeholderPhotos = [
   { id: 1, src: Image1, category: "nature", title: "Mountain Sunrise" },
-  { id: 2, src: Image2, category: "urban", title: "City Lights" },
+  { id: 2, src: Image2, category: "nature", title: "Village Lights" },
   { id: 3, src: Image3, category: "portrait", title: "Portrait Session" },
   { id: 4, src: Image4, category: "nature", title: "Forest Path" },
   { id: 5, src: Image5, category: "urban", title: "Street Photography" },
