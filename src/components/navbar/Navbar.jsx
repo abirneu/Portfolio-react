@@ -7,7 +7,7 @@ const navMenus = [
   { name: "Home", link: "/" },           // route use korlam
   { name: "Resume", link: "/resume" },    // scroll section (same page)
   { name: "Projects", link: "/projects" }, // new page
-  { name: "Services", link: "/#services" },
+  { name: "Services", link: "/services" },
   { name: "Contact", link: "/contact"}
 ];
 

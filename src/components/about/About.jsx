@@ -27,15 +27,15 @@ const About = () => {
             </p>
             <div className="">
               <a
-                href="../../assets/Fake Resume.pdf"
+                href="../../assets/Abir_resume(7-9-25).pdf"
                 className="primary-btn my-6 mr-6 inline-block"
                 download
               >
                 Download Resume
               </a>
               <a
-                href="tel:+123456789"
-                title="Call +123456789 "
+                href="tel:+8801736695636"
+                title="Call +8801736695636"
                 className="outline-btn my-6"
               >
                 Contact

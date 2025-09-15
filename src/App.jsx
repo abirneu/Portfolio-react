@@ -6,7 +6,7 @@ import Hero from "./components/hero/Hero.jsx";
 import About from "./components/about/About.jsx";
 import Services from "./components/services/Services.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Skills from "./components/skills/Skills.jsx";
+// import Skills from "./components/skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Resume from "./components/resume/Resume.jsx";
@@ -37,7 +37,7 @@ const App = () => {
               <Hero />
               <About />
               {/* <Skills /> */}
-              <Services />
+              {/* <Services /> */}
               <Footer />
             </>
           }
@@ -57,6 +57,11 @@ const App = () => {
         <Route
           path="/resume"
           element={<Resume />}
+        />
+        {/* Services Page */}
+        <Route
+          path="/services"
+          element={<Services />}
         />
       </Routes>
     </div>
