@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar/Navbar.jsx";
@@ -7,37 +7,11 @@ import About from "./components/about/About.jsx";
 import Services from "./components/services/Services.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Skills from "./components/skills/Skills.jsx";
-import Loader from "./components/loader/Loader.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import Contact from "./components/contact/Contact.jsx";
+import Resume from "./components/resume/Resume.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-
-// Lazy import Projects
-const Projects = lazy(
-  () =>
-    new Promise((resolve) => {
-      setTimeout(
-        () => resolve(import("./components/Projects/Projects.jsx")),
-        1500
-      ); // 1.5s delay
-    })
-);
-// Lazy load Contact with 1.5s delay
-const Contact = lazy(() =>
-  new Promise((resolve) =>
-    setTimeout(() => resolve(import("./components/contact/Contact.jsx")), 1500)
-  )
-);
-
-// Lazy import Resume
-const Resume = lazy(
-  () =>
-    new Promise((resolve) => {
-      setTimeout(
-        () => resolve(import("./components/resume/Resume.jsx")),
-        1500
-      ); // 1.5s delay
-    })
-);
 
 const App = () => {
   React.useEffect(() => {
@@ -69,32 +43,20 @@ const App = () => {
           }
         />
 
-        {/* Projects with loader */}
+        {/* Projects */}
         <Route
           path="/projects"
-          element={
-            <Suspense fallback={<Loader />}>
-              <Projects />
-            </Suspense>
-          }
+          element={<Projects />}
         />
-        {/* Contact Page with Loader */}
+        {/* Contact Page */}
         <Route
           path="/contact"
-          element={
-            <Suspense fallback={<Loader />}>
-              <Contact />
-            </Suspense>
-          }
+          element={<Contact />}
         />
-        {/* Resume Page with Loader */}
+        {/* Resume Page */}
         <Route
           path="/resume"
-          element={
-            <Suspense fallback={<Loader />}>
-              <Resume />
-            </Suspense>
-          }
+          element={<Resume />}
         />
       </Routes>
     </div>
