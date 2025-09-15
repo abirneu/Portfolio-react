@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-secondary   dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         {/* Header Section */}
         <div className="font-bold relative mb-16 md:mb-20" data-aos="fade-down" data-aos-duration="1000">

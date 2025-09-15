@@ -90,31 +90,20 @@ const Hero = () => {
               />
             </div>
             {/* main div for working details */}
-            <div className="grid grid-cols-3 gap-4 w-full h-20 sm:w-3/4 sm: mt-4">
-              {/* experience div */}
-              <div
-                className="bg-primary text-white
-                rounded-xl shadow-lg hover:shadow-primary/60 p-4 flex flex-col items-center justify-center
-                transition-all duration-300 transform  hover:bg-primary/80 "
-                >
-                <p className=" text-xl">2+</p>
-                <p className="text-center text-sm">Years Experience</p>
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center">
+                  <div className="text-2xl font-bold text-primary">2+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center">
+                  <div className="text-2xl font-bold text-primary">20+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center">
+                  <div className="text-2xl font-bold text-primary">100%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Satisfaction</div>
+                </div>
               </div>
-              {/* completed project div */}
-              <div className="bg-primary text-white
-                rounded-xl shadow-lg hover:shadow-primary/60 p-4 flex flex-col items-center justify-center
-                transition-all duration-300 transform  hover:bg-primary/80 ">
-                <p className="text-xl">20+</p>
-                <p className="text-sm">Projects</p>
-              </div>
-              {/* client service div */}
-              <div className="bg-primary text-white
-                rounded-xl shadow-lg hover:shadow-primary/60 p-4 flex flex-col items-center justify-center
-                transition-all duration-300 transform  hover:bg-primary/80 ">
-                <p className="text-xl">100+</p>
-                <p className="text-sm">Clients</p>
-              </div>
-            </div>
           </div>
         </div>
         {/* image section */}

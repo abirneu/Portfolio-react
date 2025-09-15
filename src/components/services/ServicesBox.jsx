@@ -9,9 +9,9 @@ import {
 const ServicesData = [
   {
     id: 1,
-    name: "UX Research",
-    description: "In-depth user research to create intuitive experiences that delight your audience and drive engagement. I use a combination of qualitative and quantitative methods to understand user behaviors, needs, and motivations.",
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    name: "Full Stack Development",
+    description: "Building responsive and high-performance web applications using the MERN stack (MongoDB, Express.js, React, Node.js). I focus on creating seamless user experiences and robust back-end solutions.",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=100",
     icon: <AiFillLayout className="text-2xl text-white" />,
     bgColor: "bg-blue-500/90",
     delay: 100,
@@ -24,7 +24,7 @@ const ServicesData = [
   },
   {
     id: 2,
-    name: "App Development",
+    name: "Frontend Development",
     description: "Native and cross-platform mobile applications built with cutting-edge technologies for optimal performance. I develop apps for both iOS and Android platforms using modern frameworks.",
     image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
     icon: <AiOutlineMobile className="text-2xl text-white" />,
@@ -76,30 +76,35 @@ const ServicesBox = ({ onLearnMore }) => {
         {ServicesData.map((service) => (
           <div
             key={service.id}
-            className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 ease-out transform hover:-translate-y-2"
+            className="group relative overflow-hidden rounded-2xl
+             shadow-lg hover:shadow-xl transition-all duration-700
+              ease-in-out transform hover:-translate-y-2
+               dark:border-gray-700
+              "
             data-aos="fade-up"
+            data-aos-duration="1000"
             data-aos-delay={service.delay}
           >
             <div 
-              className={`h-64 bg-cover bg-center bg-no-repeat relative ${service.bgColor}`}
+              className={`h-64 bg-cover bg-center bg-no-repeat relative ${service.bgColor} transition-transform duration-700 ease-in-out group-hover:scale-105`}
               style={{ backgroundImage: `url('${service.image}')` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-70 transition-all duration-700 ease-in-out"></div>
               
-              <div className="absolute top-4 right-4 w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+              <div className="absolute top-4 right-4 w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-all duration-700 ease-in-out">
                 {service.icon}
               </div>
               
-              <div className="absolute bottom-5 left-5 right-5 text-primary">
-                <h3 className="text-xl font-bold mb-2">{service.name}</h3>
-                <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto transition-all duration-500">
+              <div className="absolute bottom-5 left-5 right-5 text-primary transition-all duration-700 ease-in-out">
+                <h3 className="text-xl font-bold mb-2 transform transition-transform duration-700 ease-in-out group-hover:translate-y-[-4px]">{service.name}</h3>
+                <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto transition-all duration-700 ease-in-out">
                   {service.description.substring(0, 80)}...
                 </p>
                 
-                <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-700 ease-in-out">
                   <button 
                     onClick={() => onLearnMore(service)}
-                    className="text-xs font-medium px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
+                    className="text-xs font-medium px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 ease-in-out"
                   >
                     Learn more
                   </button>
