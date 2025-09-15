@@ -125,7 +125,7 @@ const Skills = () => {
               onClick={() => setActiveCategory("all")}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${activeCategory === "all" 
                 ? "bg-primary text-white" 
-                : "text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400"}`}
+                : "text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary"}`}
             >
               All
             </button>
@@ -135,7 +135,7 @@ const Skills = () => {
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-1 py-2 rounded-lg text-sm  font-medium transition-all ${activeCategory === category.id 
                   ? "bg-primary text-white" 
-                  : "text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400"}`}
+                  : "text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary"}`}
               >
                 {category.title}
               </button>
