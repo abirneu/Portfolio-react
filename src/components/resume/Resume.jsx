@@ -25,11 +25,7 @@ const Resume = () => {
     return (
         <div className="min-h-screen bg-secondary py-6 px-4 sm:px-6 lg:px-0 dark:bg-gray-900">
             <div className="max-w-full mx-auto">
-                <div className="sm:order-2 font-bold relative mb-10" data-aos="fade-down" data-aos-duration="1000">
-                    <div className="text-center text-5xl xl:text-6xl font-bold text-black/5 dark:text-gray-700">
-                        RESUME
-                    </div>
-                </div>
+               
 
                 {/* Filter buttons */}
                 <div className="flex justify-center mb-5">
