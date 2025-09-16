@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Img1 from "/src/assets/certificateImg/ostad_img.jpg";
+
 
 const Certificate = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
@@ -8,52 +10,12 @@ const Certificate = () => {
   const [certificates, setCertificates] = useState([
     {
       id: 1,
-      title: "React Developer Certification",
-      issuer: "Meta",
-      date: "May 2023",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      title: "Full Stack Web Development with Python, Django & React",
+      issuer: "OSTAD",
+      date: "January 2025",
+      image: Img1,
       credentialLink: "#"
     },
-    {
-      id: 2,
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "March 2023",
-      image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      credentialLink: "#"
-    },
-    {
-      id: 3,
-      title: "UI/UX Design Specialization",
-      issuer: "Google",
-      date: "January 2023",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      credentialLink: "#"
-    },
-    {
-      id: 4,
-      title: "Full Stack Web Development",
-      issuer: "The Odin Project",
-      date: "November 2022",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      credentialLink: "#"
-    },
-    {
-      id: 5,
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "September 2022",
-      image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      credentialLink: "#"
-    },
-    {
-      id: 6,
-      title: "Tailwind CSS Mastery",
-      issuer: "Frontend Masters",
-      date: "July 2022",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      credentialLink: "#"
-    }
   ]);
 
   const openModal = (cert) => {
@@ -114,7 +76,7 @@ const Certificate = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 group-hover:text-primary dark:group-hover:text-primary transition-colors">
                   {cert.title}
                 </h3>
                 <div className="flex justify-between items-center">
@@ -123,7 +85,7 @@ const Certificate = () => {
                 </div>
                 <button 
                   onClick={() => openModal(cert)}
-                  className="mt-4 w-full py-2 text-center text-blue-600 dark:text-blue-400 border border-blue-600 dark:border-blue-400 rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-colors duration-300"
+                  className="mt-4 w-full py-2 text-center text-black dark:text-white border border-primary dark:border-primary/60 rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-gray-900 transition-colors duration-300"
                 >
                   View Certificate
                 </button>

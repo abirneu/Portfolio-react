@@ -17,11 +17,11 @@ const Skills = () => {
       ),
       color: "blue",
       skills: [
-        { name: "HTML/CSS", percentage: "95%" },
-        { name: "JavaScript (ES6+)", percentage: "90%" },
-        { name: "React & Ecosystem", percentage: "92%" },
-        { name: "Vue.js", percentage: "75%" },
-        { name: "Tailwind CSS", percentage: "88%" }
+        { name: "HTML", percentage: "95%" },
+        { name: "JavaScript (ES6+)", percentage: "60%" },
+        { name: "React.Js", percentage: "70%" },
+        { name: "CSS", percentage: "80%" },
+        { name: "Tailwind CSS", percentage: "85%" }
       ]
     },
     {
@@ -35,11 +35,10 @@ const Skills = () => {
       ),
       color: "emerald",
       skills: [
-        { name: "Node.js", percentage: "85%" },
-        { name: "Express.js", percentage: "80%" },
-        { name: "Python/Django", percentage: "75%" },
-        { name: "MongoDB", percentage: "70%" },
-        { name: "PostgreSQL", percentage: "65%" }
+        { name: "Python", percentage: "80%" },
+        { name: "Django", percentage: "85%" },
+        { name: "MySQL", percentage: "75%" },
+        { name: "SQLite3", percentage: "85%" },
       ]
     },
     {
@@ -53,11 +52,11 @@ const Skills = () => {
       ),
       color: "purple",
       skills: [
-        { name: "Figma", percentage: "88%" },
+        { name: "Figma", percentage: "80%" },
         { name: "Git & GitHub", percentage: "90%" },
-        { name: "VS Code", percentage: "93%" },
+        { name: "VS Code", percentage: "90%" },
         { name: "Webpack/Vite", percentage: "75%" },
-        { name: "Adobe Creative Suite", percentage: "70%" }
+        { name: "Canva", percentage: "80%" }
       ]
     },
     {
@@ -72,11 +71,11 @@ const Skills = () => {
       ),
       color: "amber",
       skills: [
-        { name: "JavaScript/TypeScript", percentage: "90%" },
+        { name: "JavaScript/TypeScript", percentage: "70%" },
         { name: "Python", percentage: "80%" },
-        { name: "Java", percentage: "65%" },
-        { name: "C++", percentage: "60%" },
-        { name: "PHP", percentage: "55%" }
+        { name: "C", percentage: "90%" },
+        { name: "C++", percentage: "90%" }
+     
       ]
     }
   ], []);
