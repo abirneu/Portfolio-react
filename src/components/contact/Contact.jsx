@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="min-h-screen bg-secondary dark:bg-gray-900 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
             <div className="font-bold relative mb-12 sm:mb-16" data-aos="fade-down" data-aos-duration="1000">
-                <div className="text-center text-4xl sm:text-5xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
+                <div className="text-center text-5xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
                     CONTACT
                 </div>
                 <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl sm:text-3xl md:text-4xl dark:text-white">
@@ -35,7 +35,9 @@ const Contact = () => {
                                 </div>
                                 <div className="ml-3 sm:ml-4">
                                     <h3 className="text-base sm:text-lg font-medium text-gray-800 dark:text-white">Phone</h3>
-                                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">+880 1736 695636</p>
+                                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 hover:underline">
+                                        <a href="tel:+8801736695636">+880 1736 695636</a>
+                                    </p>
                                 </div>
                             </div>
 
@@ -47,7 +49,9 @@ const Contact = () => {
                                 </div>
                                 <div className="ml-3 sm:ml-4">
                                     <h3 className="text-base sm:text-lg font-medium text-gray-800 dark:text-white">Email</h3>
-                                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">abirhasan.shu@gmail.com</p>
+                                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 hover:underline">
+                                        <a href="mailto:abirhasan.shu@gmail.com">abirhasan.shu@gmail.com</a>
+                                    </p>
                                 </div>
                             </div>
 

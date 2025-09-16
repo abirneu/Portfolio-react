@@ -154,7 +154,7 @@ const Skills = () => {
               
             >
               <div className="flex items-center mb-6">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${colorClasses[category.color].bg} flex items-center justify-center mr-4 text-white`}>
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${colorClasses[category.color].bg} flex items-center justify-center mr-4 text-black dark:text-white`}>
                   {category.icon}
                 </div>
                 <div>

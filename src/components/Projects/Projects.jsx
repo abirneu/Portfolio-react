@@ -1,56 +1,63 @@
 import React from "react";
+import Img1 from "../../assets/projectImg/ckd.jpg";
+import Img2 from "../../assets/projectImg/ecom.png";
+import Img3 from "../../assets/projectImg/blogpost.png";
+import Img4 from "../../assets/projectImg/jobportal.jpg";
+import Img5 from "../../assets/projectImg/Weather.png";
+
+
 
 const Projects = () => {
   const projectsData = [
     {
       id: 1,
-      title: "E-Commerce Website",
+      title: "Chronic Kidney Disease (CKD) Prediction System",
       description:
-        "A full-stack e-commerce platform built with React, Node.js, and MongoDB",
-      technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      githubLink: "#",
+        "An Ensemble Learning-Based Diagnostic Decision Support System for Doctors",
+      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "JupyterNotebook", "Django","HTML","TailwindCSS"],
+      githubLink: "https://github.com/abirneu/ckd_early",
       liveLink: "#",
-      image: "https://picsum.photos/id/1/200/300",
+      image: Img1,
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Single-Vendor E-Commerce Platform (GreatKart)",
       description:
-        "A collaborative task management application with real-time updates",
-      technologies: ["React", "Firebase", "Material-UI", "Redux"],
-      githubLink: "#",
+        "A comprehensive e-commerce platform for a single vendor, featuring product listings, shopping cart functionality, and secure payment processing.",
+      technologies: ["Django", "Python", "HTML", "CSS", "JavaScript", "SQLite"],
+      githubLink: "https://github.com/abirneu/GreatKart",
       liveLink: "#",
-      image: "https://picsum.photos/id/2/200/300",
+      image: Img2,
     },
     {
       id: 3,
-      title: "Weather Dashboard",
+      title: "Blog Post Website",
+      description:
+        "A platform for creating and sharing blog posts with a focus on user engagement and SEO.",
+      technologies: ["Django", "Python", "HTML", "CSS", "Tailwind CSS", "JavaScript", "SQLite"],
+      githubLink: "https://github.com/abirneu/BlogPost",
+      liveLink: "https://blogpost-f4tg.onrender.com/",
+      image: Img3,
+    },
+    {
+      id: 4,
+      title: "Job Portal",
+      description:
+        "A platform for job seekers and employers to connect and manage job listings.",
+      technologies: ["Django", "Python", "HTML", "CSS", "JavaScript", "SQLite"],
+      githubLink: "https://github.com/abirneu/JobPortal",
+      liveLink: "https://jobportal-k7o0.onrender.com/",
+      image: Img4,
+    },
+    {
+      id: 5,
+      title: "Weather App",
       description:
         "Real-time weather forecasting application with location detection",
       technologies: ["React", "OpenWeather API", "Chart.js"],
-      githubLink: "#",
-      liveLink: "#",
-      image: "https://picsum.photos/id/3/200/300",
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      description:
-        "Personal portfolio website built with React and Tailwind CSS",
-      technologies: ["React", "Tailwind CSS", "Vite"],
-      githubLink: "#",
-      liveLink: "#",
-      image: "https://picsum.photos/id/4/200/300",
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      description:
-        "Personal portfolio website built with React and Tailwind CSS",
-      technologies: ["React", "Tailwind CSS", "Vite", "Html", "Test"],
-      githubLink: "#",
-      liveLink: "#",
-      image: "https://picsum.photos/id/5/200/300",
+      githubLink: "https://github.com/abirneu/Weather-App",
+      liveLink: "https://weatherbyabir.netlify.app/",
+      image: Img5,
     },
   ];
 

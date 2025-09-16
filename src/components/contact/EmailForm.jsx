@@ -78,7 +78,7 @@ const EmailForm = () => {
           onChange={handleInputChange}
           required
           placeholder="Your Name"
-          className="w-full mb-4 px-4 py-3 bg-stone-200 dark:bg-gray-600 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full mb-4 px-4 py-3 bg-stone-200 dark:bg-gray-700  rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/60"
         />
         <input
           type="email"
@@ -87,7 +87,7 @@ const EmailForm = () => {
           onChange={handleInputChange}
           required
           placeholder="Your Email"
-          className="w-full mb-4 px-4 py-3  bg-stone-200 dark:bg-gray-600 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mb-4 px-4 py-3  bg-stone-200 dark:bg-gray-700  rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/60"
         />
         <input
           type="text"
@@ -96,7 +96,7 @@ const EmailForm = () => {
           onChange={handleInputChange}
           required
           placeholder="Subject"
-          className="w-full mb-4 px-4 py-3  bg-stone-200 dark:bg-gray-600 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mb-4 px-4 py-3  bg-stone-200 dark:bg-gray-700  rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/60"
         />
         <textarea
           name="message"
@@ -105,7 +105,7 @@ const EmailForm = () => {
           required
           rows="5"
           placeholder="Your Message"
-          className="w-full mb-4 px-4 py-3 border  bg-stone-200 dark:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mb-4 px-4 py-3   bg-stone-200 dark:bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/60"
         ></textarea>
 
         <button
