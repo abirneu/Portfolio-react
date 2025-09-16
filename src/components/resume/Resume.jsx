@@ -29,7 +29,7 @@ const Resume = () => {
 
                 {/* Filter buttons */}
                 <div className="flex justify-center mb-5">
-                    <div className="inline-flex flex-wrap sm:flex-nowrap justify-center gap-2 rounded-md" role="group">
+                    <div className="inline-flex flex-wrap sm:flex-nowrap justify-center gap-2 rounded-md " role="group">
                         {[
                             { id: 'all', label: 'All' },
                             { id: 'education', label: 'Education' },
@@ -43,9 +43,10 @@ const Resume = () => {
                                 onClick={() => setActiveFilter(filter.id)}
                                 className={`px-6 py-3 text-sm font-medium rounded-lg
                                     ${activeFilter === filter.id
-                                        ? 'bg-primary text-white'
-                                        : 'bg-white text-gray-700 hover:bg-gray-100'
-                                    } border border-gray-200`}
+                                        ? 'bg-primary text-white '
+                                        : 'bg-white text-gray-700 hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
+                                    }  border border-primary`}
+                            data-aos="zoom-in" data-aos-once="true" data-aos-duration="800" data-aos-delay="200"
                             >
                                 {filter.label}
                             </button>
@@ -54,7 +55,8 @@ const Resume = () => {
                 </div>
 
                 {/* Content based on filter */}
-                <div className="bg-secondary">
+                <div className="bg-secondary" 
+                >
                     <Suspense fallback={<SkeletonLoader />}>
                         {activeFilter === 'all' && (
                             <div className="space-y-1">

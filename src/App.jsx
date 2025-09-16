@@ -12,6 +12,7 @@ import Contact from "./components/contact/Contact.jsx";
 import Resume from "./components/resume/Resume.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import FloatingWhatsApp from "./components/floating/Floating.jsx";
 
 const App = () => {
   React.useEffect(() => {
@@ -39,6 +40,7 @@ const App = () => {
               {/* <Skills /> */}
               {/* <Services /> */}
               <Footer />
+              <FloatingWhatsApp />
             </>
           }
         />
