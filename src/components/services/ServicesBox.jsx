@@ -1,6 +1,7 @@
 import React from "react";
-import Img1 from "../../assets/ServiceImage/fulllStack.png";
-import Img2 from "../../assets/ServiceImage/frontend.jpg";
+import Img1 from "/src/assets/ServiceImage/fulllStack.png";
+import Img2 from "/src/assets/ServiceImage/frontEnd.jpg";
+
 import { 
   AiFillLayout, 
   AiOutlineMobile, 

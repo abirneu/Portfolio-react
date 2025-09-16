@@ -22,6 +22,7 @@ const Education = () => {
       id: 2,
       institute: "Netrokona University",
       logo: Img1,
+      degree: "Bsc in Computer Science",
       startDate: "Janu 2020",
       endDate: "June 2025",
       memory:
