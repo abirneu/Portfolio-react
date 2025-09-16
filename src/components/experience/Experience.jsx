@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="min-h-screen bg-secondary   dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-secondary   dark:bg-gray-900 py-3 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         {/* Header Section */}
         <div className="font-bold relative mb-16 md:mb-20" data-aos="fade-down" data-aos-duration="1000">
@@ -26,7 +26,7 @@ const Experience = () => {
                 <div>
                   <h3 className="font-medium text-gray-700 dark:text-gray-300">Frontend Development</h3>
                   <div className="mt-2 flex flex-wrap gap-2">
-                    {['React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS','HTML'].map(skill => (
+                    {['React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS','HTML', 'AOS Animation'].map(skill => (
                       <span key={skill} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm">
                         {skill}
                       </span>
@@ -38,7 +38,7 @@ const Experience = () => {
                  <div>
                   <h3 className="font-medium text-gray-700 dark:text-gray-300">Backend Development</h3>
                   <div className="mt-2 flex flex-wrap gap-2">
-                    {['Python', 'Django', 'React.js', 'MySQL', 'PostgreSQL', ].map(skill => (
+                    {['Python', 'Django', 'MySQL', 'PostgreSQL', 'REST APIs' ].map(skill => (
                       <span key={skill} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm">
                         {skill}
                       </span>
@@ -49,7 +49,7 @@ const Experience = () => {
                 <div>
                   <h3 className="font-medium text-gray-700 dark:text-gray-300">Other Technologies</h3>
                   <div className="mt-2 flex flex-wrap gap-2">
-                    {['Git', 'REST APIs', 'Figma', 'VS Code'].map(skill => (
+                    {['Git', 'Figma', 'VS Code'].map(skill => (
                       <span key={skill} className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-full text-sm">
                         {skill}
                       </span>
@@ -89,12 +89,12 @@ const Experience = () => {
                     </div>
                     <div className="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
                       <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded-full">
-                        2021 - Present
+                        2020 - Present
                       </span>
                       <h3 className="font-bold text-lg mt-2 text-gray-800 dark:text-white">Computer Science Student</h3>
                       <p className="text-gray-600 dark:text-gray-400">Netrokona University </p>
                       <p className="mt-2 text-gray-700 dark:text-gray-300">
-                        Currently pursuing my degree with a focus on web development and user experience design.
+                        Pursuing a Bachelor's degree in Computer Science with a focus on web development and user experience design.
                       </p>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ const Experience = () => {
                     </div>
                     <div className="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
                       <span className="text-xs font-semibold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30 px-2 py-1 rounded-full">
-                        2022 - 2023
+                        2023 - Present
                       </span>
                       <h3 className="font-bold text-lg mt-2 text-gray-800 dark:text-white">Personal Projects</h3>
                       <p className="text-gray-600 dark:text-gray-400">Full-Stack Applications</p>
@@ -126,24 +126,17 @@ const Experience = () => {
                         Now Seeking
                       </span>
                       <h3 className="font-bold text-lg mt-2 text-gray-800 dark:text-white">Internship Opportunity</h3>
-                      <p className="text-gray-600 dark:text-gray-400">Frontend Development / Web Development</p>
+                      <p className="text-gray-600 dark:text-gray-400">Full Stack Development / Web Development</p>
                       <p className="mt-3 text-gray-700 dark:text-gray-300">
-                        Eager to apply my skills in a professional environment and contribute to real-world projects. 
-                        Looking for opportunities to learn from experienced developers and grow as a professional.
+                        Eager to gain real-world experience in a software company through an internship, where I can apply my skills, 
+                        contribute to projects, and learn from experienced developers to grow as a professional.
                       </p>
-                      <div className="mt-4 flex flex-wrap gap-3">
-                        <span className="px-3 py-1.5 bg-green-500 dark:bg-green-600 text-white rounded-full text-sm font-medium">
-                          React.js
-                        </span>
-                        <span className="px-3 py-1.5 bg-green-500 dark:bg-green-600 text-white rounded-full text-sm font-medium">
-                          JavaScript
-                        </span>
-                        <span className="px-3 py-1.5 bg-green-500 dark:bg-green-600 text-white rounded-full text-sm font-medium">
-                          UI/UX Design
-                        </span>
-                      </div>
-                      <button className="mt-6 px-6 py-2.5 bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600 text-white rounded-lg font-medium transition-colors duration-300">
-                        Contact Me
+                      
+                      <button className="mt-6 px-6 py-2.5 bg-green-400 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600 text-white rounded-lg font-medium transition-colors duration-300">
+                        <a 
+                         href="tel:+8801736695636"
+                        title="Call +8801736695636"
+                        >Contact Me</a>
                       </button>
                     </div>
                   </div>

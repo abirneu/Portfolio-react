@@ -106,21 +106,23 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="bg-white dark:bg-gray-900 py-16 transition-colors duration-300">
-      <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+    <section id="skills" className="bg-secondary dark:bg-gray-900 py-16 transition-colors duration-300">
+      <div className="container mx-auto px-4 md:px-8 max-w-8xl">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">
-            Skills & Expertise
+        <div className="font-bold relative mb-16 md:mb-5" data-aos="fade-down" data-aos-duration="1000">
+          <div className="text-center text-5xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
+            SKILLS & EXPERTISE
+          </div>
+          <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl md:text-3xl lg:text-4xl dark:text-white">
+            What I Bring to the Table
           </h1>
-          <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            A showcase of my technical proficiency across various modern technologies and development tools.
-          </p>
         </div>
 
         {/* Category Filter */}
         <div className="flex justify-center mb-10">
-          <div className="inline-flex bg-white dark:bg-slate-800 rounded-xl p-1 shadow-md border border-slate-200 dark:border-slate-700">
+          <div className="inline-flex  dark:bg-slate-800 rounded-xl p-1  border border-primary dark:border-slate-700"
+          
+            >
             <button
               onClick={() => setActiveCategory("all")}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${activeCategory === "all" 
@@ -149,6 +151,7 @@ const Skills = () => {
             <div 
               key={category.id}
               className="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300"
+              
             >
               <div className="flex items-center mb-6">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${colorClasses[category.color].bg} flex items-center justify-center mr-4 text-white`}>
@@ -181,13 +184,14 @@ const Skills = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-12 bg-violet-50 dark:bg-slate-800 p-6 rounded-2xl border border-violet-100 dark:border-slate-700 text-center">
+        <div className="mt-1 bg-secondary dark:bg-slate-900 p-6 rounded-2xl border-2  border-primary dark:border-primary/60  text-center w-auto mx-auto max-w-md" data-aos="fade-up" data-aos-duration="1000">
           <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">Ready to work together?</h3>
           <p className="text-slate-600 dark:text-slate-300 mb-4">Let's discuss how I can contribute to your next project.</p>
           <button className="px-6 py-2.5 bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-lg transition-colors duration-300">
             Get In Touch
           </button>
         </div>
+        {/* footer */}
       </div>
     </section>
   );

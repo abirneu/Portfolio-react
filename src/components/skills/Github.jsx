@@ -4,20 +4,20 @@ import { FaGithub } from "react-icons/fa";
 
 const Github = () => {
   return (
-    <section id="github" className="bg-white dark:bg-slate-900 py-16">
+    <section id="github" className="bg-secondary dark:bg-slate-900 py-16">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Title with background text */}
         <div className="relative font-bold mb-12">
           <div className="text-5xl xl:text-8xl text-black/5 dark:text-gray-700">
-            GITHUB
+            GITHUB 
           </div>
           <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl dark:text-white">
-            Github Contributions
+            Github 
           </h1>
         </div>
 
         {/* Contributions Graph */}
-        <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-2xl shadow-lg overflow-x-auto">
+        <div className="bg-secondary dark:bg-slate-800 p-6 rounded-2xl border-2 border-primary dark:border-primary/60  overflow-x-auto">
           <GitHubCalendar
             username="abirneu"
             blockSize={15}
@@ -50,7 +50,7 @@ const Github = () => {
           `}
         </style>
         {/* GitHub Icon */}
-        <div>
+        <div className="mt-10 border-2 border-primary p-6 dark:border-primary/60 rounded-2xl inline-block">
             <h2 className="text-2xl font-bold text-slate-800 dark:text-white mb-4 mt-8">Find me on GitHub</h2>
             <p className="text-slate-600 dark:text-slate-300 mb-4">Check out my repositories and projects on GitHub.</p>
             <a href="https://github.com/abirneu" target="_blank" rel="noopener noreferrer">
