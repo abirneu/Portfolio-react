@@ -5,8 +5,6 @@ import Img3 from "../../assets/projectImg/blogpost.png";
 import Img4 from "../../assets/projectImg/jobportal.jpg";
 import Img5 from "../../assets/projectImg/Weather.png";
 
-
-
 const Projects = () => {
   const projectsData = [
     {
@@ -14,7 +12,17 @@ const Projects = () => {
       title: "Chronic Kidney Disease (CKD) Prediction System",
       description:
         "An Ensemble Learning-Based Diagnostic Decision Support System for Doctors",
-      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "JupyterNotebook", "Django","HTML","TailwindCSS"],
+      technologies: [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "JupyterNotebook",
+        "Django",
+        "HTML",
+        "TailwindCSS",
+      ],
       githubLink: "https://github.com/abirneu/ckd_early",
       liveLink: "#",
       image: Img1,
@@ -34,7 +42,15 @@ const Projects = () => {
       title: "Blog Post Website",
       description:
         "A platform for creating and sharing blog posts with a focus on user engagement and SEO.",
-      technologies: ["Django", "Python", "HTML", "CSS", "Tailwind CSS", "JavaScript", "SQLite"],
+      technologies: [
+        "Django",
+        "Python",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "JavaScript",
+        "SQLite",
+      ],
       githubLink: "https://github.com/abirneu/BlogPost",
       liveLink: "https://blogpost-f4tg.onrender.com/",
       image: Img3,
@@ -64,13 +80,15 @@ const Projects = () => {
   return (
     <section className="min-h-screen bg-secondary dark:bg-gray-900 ">
       <div className="container mx-auto px-4 py-12">
-        <div className=" font-bold relative"   data-aos="fade-down" data-aos-duration="1000">
-          <div className=" text-center text-5xl xl:text-8xl font-bold text-black/5 dark:text-gray-700"
-          >
+        <div
+          className=" font-bold relative"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <div className=" text-center text-5xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
             PROJECTS
           </div>
-          <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl dark:text-white"
-          >
+          <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl dark:text-white">
             Projects
           </h1>
         </div>
@@ -187,6 +205,37 @@ const Projects = () => {
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/20 dark:group-hover:border-blue-400/20 rounded-2xl transition-all duration-300 pointer-events-none" />
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center relative">
+          <div className="inline-flex items-center justify-center w-full">
+            <hr className="w-64 h-1 my-8 bg-gradient-to-r from-transparent to-transparent via-blue-400/30 border-0 rounded dark:via-blue-600/30" />
+            <div className="absolute px-4 -translate-x-1/2 left-1/2 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl">
+              <p
+                className="text-gray-600 dark:text-gray-300 font-medium relative py-2 px-6 
+                    bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 
+                    rounded-xl shadow-sm border border-blue-200/50 dark:border-blue-700/30
+                    animate-pulse-slow"
+              >
+                <span className="flex items-center justify-center">
+                  <svg
+                    className="w-5 h-5 mr-2 text-blue-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    ></path>
+                  </svg>
+                  More projects coming soon...
+                </span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

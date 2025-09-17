@@ -30,17 +30,18 @@ const LearnMore = ({ service, isOpen, onClose }) => {
             <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-2">
               {service.icon}
             </div>
-            <h2 className="text-3xl font-bold">{service.name}</h2>
           </div>
         </div>
         
         <div className="p-6 md:p-8">
-          <h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Service Overview</h3>
+          <h2 className="text-2xl font-bold mb-2 dark:text-white">{service.name}</h2>
+          <p className="w-full h-px bg-primary/70 dark:bg-gray-600 my-2"></p>
+          <h3 className="text-xl font-semibold mb-4 text-black dark:text-white">Service Overview</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
             {service.description}
           </p>
-          
-          <h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">What's Included</h3>
+
+          <h3 className="text-xl font-semibold mb-4 text-black dark:text-white">What's Included</h3>
           <ul className="mb-6 space-y-2">
             {service.features.map((feature, index) => (
               <li key={index} className="flex items-start text-gray-600 dark:text-gray-300">
@@ -57,8 +58,8 @@ const LearnMore = ({ service, isOpen, onClose }) => {
             <p className="text-gray-600 dark:text-gray-300 mb-3">
               Contact me to discuss how I can help with your project.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full transition-colors">
-              Get in Touch
+            <button className="bg-primary hover:bg-primary/75 text-white font-medium py-2 px-6 rounded-full transition-colors">
+              <a href="tel:+8801736695636">Get in Touch</a>
             </button>
           </div>
         </div>
