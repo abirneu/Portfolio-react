@@ -4,13 +4,12 @@ A modern, responsive, and performant portfolio website built with React.js, show
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
-![Tailwind CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ##  Live Demo
 
 Check out the live website: **[https://abirsportfolio.netlify.app/](https://abirsportfolio.netlify.app/)**
 
-## ✨ Features
+##  Features
 
 - ** Blazing Fast**: Built with Vite for optimal performance and development experience.
 - ** Fully Responsive**: Looks great on all devices, from desktops to smartphones.
