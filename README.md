@@ -1,4 +1,4 @@
-<!-- # 🌐 Abir Dey - Portfolio
+# 🌐 Abir Dey - Portfolio
 
 A modern, responsive, and performant portfolio website built with React.js, showcasing my skills, projects, and experience as a developer.
 
@@ -92,4 +92,4 @@ This is my personal portfolio, so contributions are not expected. However, sugge
 
 ---
  **Feel free to star this repository if you found it helpful!**
- -->
+
