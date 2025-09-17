@@ -92,9 +92,4 @@ This is my personal portfolio, so contributions are not expected. However, sugge
 
 ---
  **Feel free to star this repository if you found it helpful!**
-<<<<<<< HEAD
-
-
- 
-=======
->>>>>>> cb7da4d7a17c2e3857074bde296fafb98ff3a542 -->
+ -->

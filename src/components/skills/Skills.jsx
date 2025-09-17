@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import Github from "./Github";
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -331,6 +332,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
+        <Github />
 
         {/* Call to Action */}
         <div
