@@ -84,7 +84,13 @@ const Hero = () => {
                   data-aos-easing="ease-in-out"
                 />
               </a>
-              <CiLinkedin
+              <a 
+               href="https://www.linkedin.com/in/abirneu/"
+                target="_blank"
+                rel="noopener noreferrer"
+               
+              >
+                <CiLinkedin
                 size={24}
                 className=" cursor-pointer"
                 data-aos="fade-up"
@@ -92,7 +98,14 @@ const Hero = () => {
                 data-aos-delay="200"
                 data-aos-easing="ease-in-out"
               />
-              <IoLogoFacebook
+
+              </a>
+              <a 
+              href="https://www.facebook.com/abir.neu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoLogoFacebook
                 size={24}
                 className=" cursor-pointer"
                 data-aos="fade-left"
@@ -100,6 +113,10 @@ const Hero = () => {
                 data-aos-delay="200"
                 data-aos-easing="ease-in-out"
               />
+
+              </a>
+              
+              
             </div>
             {/* main div for working details */}
             <div className="grid grid-cols-3 gap-4 mb-8">
