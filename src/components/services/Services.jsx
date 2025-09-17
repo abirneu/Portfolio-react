@@ -64,7 +64,7 @@ const Services = () => {
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center" 
                 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                   <div className="text-2xl font-bold text-primary">2+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+                  <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400">Years Experience</div>
                 </div>
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center" 
                 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi"; // Import FiX for the close icon
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
-import { Link } from "react-router-dom";  // <-- add this
+import { Link } from "react-router-dom";
 
 const navMenus = [
-  { name: "Home", link: "/" },           // route use korlam
-  { name: "Resume", link: "/resume" },    // scroll section (same page)
-  { name: "Projects", link: "/projects" }, // new page
+  { name: "Home", link: "/" },
+  { name: "Resume", link: "/resume" },
+  { name: "Projects", link: "/projects" },
   { name: "Services", link: "/services" },
   { name: "Contact", link: "/contact"}
 ];
@@ -44,18 +44,16 @@ const Navbar = () => {
             {navMenus.map((navMenu, index) => (
               <li key={index}>
                 {navMenu.link.startsWith("/#") ? (
-                  // Normal anchor for same page scroll
                   <a
                     href={navMenu.link}
-                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer "
+                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
                   >
                     {navMenu.name}
                   </a>
                 ) : (
-                  // Router Link for new page
                   <Link
                     to={navMenu.link}
-                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer "
+                    className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
                   >
                     {navMenu.name}
                   </Link>
@@ -71,7 +69,7 @@ const Navbar = () => {
               />
             ) : (
               <BiSolidMoon
-                className="text-2xl dark:text-white"
+                className="text-2xl dark:text-white cursor-pointer"
                 onClick={() => setTheme("dark")}
               />
             )}
@@ -83,46 +81,69 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             {theme === "dark" ? (
               <BiSolidSun
-                className="text-2xl dark:text-white"
+                className="text-2xl dark:text-white cursor-pointer"
                 onClick={() => setTheme("light")}
               />
             ) : (
               <BiSolidMoon
-                className="text-2xl dark:text-white"
+                className="text-2xl dark:text-white cursor-pointer"
                 onClick={() => setTheme("dark")}
               />
             )}
-            <FiMenu
-              className="text-2xl cursor-pointer dark:text-white "
-              onClick={toggleMenu}
-            />
+            
+            {/* Toggle between menu and close icon */}
+            {showMenu ? (
+              <FiX
+                className="text-2xl cursor-pointer dark:text-white"
+                onClick={toggleMenu}
+              />
+            ) : (
+              <FiMenu
+                className="text-2xl cursor-pointer dark:text-white"
+                onClick={toggleMenu}
+              />
+            )}
           </div>
-          {showMenu && (
-            <div className=" fixed top-16 bg-white dark:text-white dark:bg-gray-950 shadow-md rounded-b-xl left-0 w-full z-10 py-10">
-              <ul className="flex flex-col items-center gap-4">
-                {navMenus.map((navMenu, index) => (
-                  <li key={index}>
-                    {navMenu.link.startsWith("/#") ? (
-                      <a
-                        href={navMenu.link}
-                        className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
-                        onClick={() => setShowMenu(false)}
-                      >
-                        {navMenu.name}
-                      </a>
-                    ) : (
-                      <Link
-                        to={navMenu.link}
-                        className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
-                        onClick={() => setShowMenu(false)}
-                      >
-                        {navMenu.name}
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
+          
+          {/* Mobile menu panel that slides in from right */}
+          <div className={`fixed top-0 right-0 h-full w-64 bg-white dark:text-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className="flex justify-end p-4">
+              <FiX
+                className="text-2xl cursor-pointer dark:text-white"
+                onClick={toggleMenu}
+              />
             </div>
+            <ul className="flex flex-col items-start gap-6 p-6">
+              {navMenus.map((navMenu, index) => (
+                <li key={index} className="w-full">
+                  {navMenu.link.startsWith("/#") ? (
+                    <a
+                      href={navMenu.link}
+                      className="text-xl font-semibold py-2 inline-block cursor-pointer w-full"
+                      onClick={() => setShowMenu(false)}
+                    >
+                      {navMenu.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={navMenu.link}
+                      className="text-xl font-semibold py-2 inline-block cursor-pointer w-full"
+                      onClick={() => setShowMenu(false)}
+                    >
+                      {navMenu.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          {/* Overlay background when menu is open */}
+          {showMenu && (
+            <div 
+              className="fixed inset-0 bg-black bg-opacity-50 z-40"
+              onClick={toggleMenu}
+            ></div>
           )}
         </div>
       </div>

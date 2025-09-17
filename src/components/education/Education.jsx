@@ -25,8 +25,7 @@ const Education = () => {
       degree: "Bsc in Computer Science",
       startDate: "Janu 2020",
       endDate: "June 2025",
-      memory:
-        "Graduated with First Class Honors. Led the coding club and organized hackathons.",
+      memory: "Completed BSc in Computer Science at Netrokona University (2020–2025). Worked on multiple academic projects including machine learning and web development. Wrote Project based thesis on Chronic Kidney Disease prediction using ML. Active in coding club and departmental events.",
     },
     {
       id: 3,
@@ -36,7 +35,8 @@ const Education = () => {
       startDate: "June 2017",
       endDate: "April 2019",
       memory:
-        "Graduated with top honors. Captain of the debate team and member of the math club.",
+  "Completed HSC in Science at Dhaka State College (2017–2019). Took part in science fairs, group study sessions, and college events. Built strong foundations in math and programming basics while enjoying campus life with friends.",
+
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const Education = () => {
       startDate: "January 2012",
       endDate: "February 2017",
       memory:
-        "Graduated with top honors. Active member of the science club and participated in national science fairs.",
+        "Completed SSC in Science at Machpara High School (2012–2017). Actively participated in science club activities, cultural programs, and inter-school competitions. Built early interest in technology and problem-solving during these years.",
     },
   ];
 

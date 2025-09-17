@@ -65,8 +65,7 @@ const Skills = () => {
       description: "Programming expertise",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
       color: "amber",
@@ -186,8 +185,8 @@ const Skills = () => {
         <div className="mt-1 bg-secondary dark:bg-slate-900 p-6 rounded-2xl border-2  border-primary dark:border-primary/60  text-center w-auto mx-auto max-w-md" data-aos="fade-up" data-aos-duration="1000">
           <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">Ready to work together?</h3>
           <p className="text-slate-600 dark:text-slate-300 mb-4">Let's discuss how I can contribute to your next project.</p>
-          <button className="px-6 py-2.5 bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-lg transition-colors duration-300">
-            Get In Touch
+          <button className="px-6 py-2.5 bg-primary dark:bg-primary/80 dark:hover:bg-primary/60 hover:bg-primary/80 text-white font-medium rounded-lg transition-colors duration-300">
+            <a href="mailto:abirhasan.shu@gmail.com">Get In Touch</a>
           </button>
         </div>
         {/* footer */}

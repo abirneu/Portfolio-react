@@ -8,6 +8,10 @@ import Image3 from '../../photography_image/IMG-20250915-WA0009.jpg'
 import Image4 from '../../photography_image/img2.jpg'
 import Image5 from '../../photography_image/IMG-20250915-WA0007.jpg'
 import Image6 from '../../photography_image/IMG-20250915-WA0005.jpg'
+import Image7 from '../../photography_image/IMG_2073.JPG'
+import Image8 from '../../photography_image/IMG_3389.JPG'
+import Image9 from '../../photography_image/IMG_7165.JPG'
+import Image10 from '../../photography_image/IMG_3504.JPG'
 
 
 // Placeholder data structure - UPDATE THIS WITH YOUR ACTUAL IMAGES AND METADATA
@@ -18,6 +22,10 @@ const placeholderPhotos = [
   { id: 4, src: Image4, category: "nature", title: "Forest Path" },
   { id: 5, src: Image5, category: "urban", title: "Street Photography" },
   { id: 6, src: Image6, category: "portrait", title: "Studio Portrait" },
+  { id: 7, src: Image7, category: "nature", title: "Flower Close-Up" },
+  { id: 8, src: Image8, category: "nature", title: "Cloudy Sky" },
+  { id: 9, src: Image9, category: "nature", title: "Moon Rise" },
+  { id: 10, src: Image10, category: "portrait", title: "Flower Field" },
 ];
 
 const Photography = () => {

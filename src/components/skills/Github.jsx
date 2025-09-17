@@ -17,7 +17,7 @@ const Github = () => {
         </div>
 
         {/* Contributions Graph */}
-        <div className="bg-secondary dark:bg-slate-800 p-6 rounded-2xl border-2 border-primary dark:border-primary/60  overflow-x-auto">
+        <div className="bg-secondary dark:bg-slate-800 p-6 rounded-2xl border-2 border-primary dark:border-primary/60  overflow-x-auto" data-aos="fade-up" data-aos-duration="1000">
           <GitHubCalendar
             username="abirneu"
             blockSize={15}
@@ -54,7 +54,7 @@ const Github = () => {
             <h2 className="text-2xl font-bold text-slate-800 dark:text-white mb-4 mt-8">Find me on GitHub</h2>
             <p className="text-slate-600 dark:text-slate-300 mb-4">Check out my repositories and projects on GitHub.</p>
             <a href="https://github.com/abirneu" target="_blank" rel="noopener noreferrer">
-                <button className="inline-flex items-center px-4 py-2 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors duration-300">
+                <button className="inline-flex items-center px-4 py-2 bg-primary dark:bg-primary/80 dark:hover:bg-primary/60 text-white rounded-lg hover:bg-primary/80 transition-colors duration-300">
                     <FaGithub className="mr-2" />
                     Visit My GitHub
                 </button>
