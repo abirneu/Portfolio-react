@@ -218,7 +218,6 @@ const Skills = () => {
             <div
               data-aos="fade-in" // trigger only visibility
               data-aos-duration="1000"
-              data-aos-delay={index * 200} // staggered delay based on index              
               className="h-2.5 rounded-full bg-stone-500 transition-all duration-[2000ms] ease-in-out"
               style={{
                 width: percentage,
