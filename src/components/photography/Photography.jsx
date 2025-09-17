@@ -3,7 +3,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 // Import images directly - you'll need to add these imports manually
 // Replace these with your actual image imports from the photography folder
 import Image1 from '../../photography_image/img1.jpg'
-import Image2 from '../../photography_image/IMG-20250915-WA0006.jpg'
+import Image2 from '../../photography_image/IMG_2969.JPG'
 import Image3 from '../../photography_image/IMG-20250915-WA0009.jpg'
 import Image4 from '../../photography_image/img2.jpg'
 import Image5 from '../../photography_image/IMG-20250915-WA0007.jpg'
